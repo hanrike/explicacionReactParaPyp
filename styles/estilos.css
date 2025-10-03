@@ -15,3 +15,7 @@ ul{
     justify-content: space-between;
     padding: 10px;
 }
+/*redimensiono el logo con 70 px*/
+.logo{
+    height: 70px;
+}
