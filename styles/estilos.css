@@ -1,0 +1,17 @@
+/*quito los margenes del body que vienen por defecto del navegador para que quede mi estructura bien pegada superior*/
+body{
+    margin: 0px;
+}
+/*aqui quito los puntos laterales o bullets a mis ul ya que por defecto los ul los traen el paddin y margin es 
+para poner mi logo bien en ele rrincon y nbo medio centrado*/
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+/*pongo todos los li uno al lado del otro con display flex y los separo con justify content*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
