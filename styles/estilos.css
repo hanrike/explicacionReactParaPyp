@@ -15,3 +15,26 @@ ul{
     justify-content: space-between;
     padding: 10px;
 }
+/*redimensiono el logo con 70 pxgit add .
+*/
+.logo{
+    height: 70px;
+}
+/*le estoy agregando todas las propiedades al boton nuevo post color forma borde radio etc .
+*/
+.mainButton{
+    background-color: blue;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 2px 2px;
+}
+/*agrego una clase modificadora se logra con dos puntos uno de los modificadores mas utilizados es hover .
+en este caso modifico el cursor que se vuelva manito tambien el efecto transform ppara escalar el boton cuando se 
+pase por el*/
+.mainButton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
