@@ -15,11 +15,10 @@ ul{
     justify-content: space-between;
     padding: 10px;
 }
-<<<<<<< HEAD
 /*redimensiono el logo con 70 px*/
 .logo{
     height: 70px;
-=======
+}
 /*redimensiono el logo con 70 pxgit add .
 */
 .logo{
@@ -42,5 +41,4 @@ pase por el*/
 .mainButton:hover{
     cursor: pointer;
     transform: scale(1.1);
->>>>>>> 5-crear-boton-nuevo-post
 }
