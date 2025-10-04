@@ -15,30 +15,49 @@ ul{
     justify-content: space-between;
     padding: 10px;
 }
-/*redimensiono el logo con 70 px*/
-.logo{
-    height: 70px;
-}
-/*redimensiono el logo con 70 pxgit add .
+
+/*redimensiono el logo con 70 px
 */
 .logo{
     height: 70px;
-}
-/*le estoy agregando todas las propiedades al boton nuevo post color forma borde radio etc .
+    /*voy a crear las funciones estandar que manejan todos mis botones por facilidad y asi logro no repetir clases y codigo
 */
-.mainButton{
-    background-color: blue;
-    color: white;
+}
+.button{
     border: 0px;
     padding: 5px 10px;
     border-radius: 10px;
     font-weight: bolder;
     box-shadow: 2px 2px;
 }
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+/*le estoy agregando todas las propiedades al boton nuevo post color forma borde radio etc .
+*/
+.mainButton{
+    background-color: blue;
+    color: white;
+    
+}
 /*agrego una clase modificadora se logra con dos puntos uno de los modificadores mas utilizados es hover .
 en este caso modifico el cursor que se vuelva manito tambien el efecto transform ppara escalar el boton cuando se 
 pase por el*/
 .mainButton:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+    box-shadow: 2px 2px;
+}
+/*le estoy agregando todas las propiedades al boton y aplica tambien para secundary a traves de las funciones estandar que cree en la clase
+button .
+*/
+.secondaryButton{
+    background-color: rgb(21, 140, 243);
+    color: white;
+    
+}
+/*agrego una clase modificadora se logra con dos puntos uno de los modificadores mas utilizados es hover .
+en este caso modifico el cursor que se vuelva manito tambien el efecto transform ppara escalar el boton cuando se 
+pase por el*/
+.secondaryButton:hover{
+    box-shadow: 2px 2px;
 }
