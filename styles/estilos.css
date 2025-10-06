@@ -9,11 +9,21 @@ ul{
     padding: 0px;
     margin: 0px;
 }
-/*pongo todos los li uno al lado del otro con display flex y los separo con justify content*/
+/*pongo todos los li uno al lado del otro con display flex y los separo con justify content tambien le hago el 
+maegen de color azul asi como el borde verde y la sombra*/
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: rgb(88, 88, 226);
+    border-bottom: 1px solid rgb(65, 65, 245);
+    box-shadow: 1px 1px greenyellow;
+}
+/*hago que el navbar se centre primero el display flex me agranda los botones y despues alig items me me centra los botones
+*/
+.navbar>li{
+    display: flex;
+    align-items: center;
 }
 
 /*redimensiono el logo con 70 px
@@ -21,7 +31,7 @@ ul{
 .logo{
     height: 70px;
     /*voy a crear las funciones estandar que manejan todos mis botones por facilidad y asi logro no repetir clases y codigo
-*/
+ */
 }
 .button{
     border: 0px;
@@ -60,4 +70,20 @@ en este caso modifico el cursor que se vuelva manito tambien el efecto transform
 pase por el*/
 .secondaryButton:hover{
     box-shadow: 2px 2px;
+}
+.buscar{
+    background-color: azure;
+    border: 1px solid green;
+    padding: 4px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.buscar:focus-within{
+    border: 1px solid blue;
+}
+.buscar>input{
+    outline: none;
+    border: 0px;
 }
