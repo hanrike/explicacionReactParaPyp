@@ -11,21 +11,26 @@ ul{
 }
 /*pongo todos los li uno al lado del otro con display flex y los separo con justify content tambien le hago el 
 maegen de color azul asi como el borde verde y la sombra*/
+/*pongo todos los li uno al lado del otro con display flex y los separo con justify content con background color 
+pongo todo el navbar del color que quiera*/
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgb(88, 88, 226);
-    border-bottom: 1px solid rgb(65, 65, 245);
-    box-shadow: 1px 1px greenyellow;
-}
+   
+
 /*hago que el navbar se centre primero el display flex me agranda los botones y despues alig items me me centra los botones
 */
+    background-color: rgb(84, 84, 199);
+    border-bottom: 1px solid blue;
+    box-shadow: 1px 1px blue;
+}
+/*con lo siguiente para cualquier li que este por debajo de la clase navbar se le aplicara los siguientes estilos
+en este caso los botones quedaran centrados*/
 .navbar>li{
     display: flex;
     align-items: center;
 }
-
 /*redimensiono el logo con 70 px
 */
 .logo{
@@ -73,7 +78,11 @@ pase por el*/
 }
 .buscar{
     background-color: azure;
-    border: 1px solid green;
+    border: 1px solid green;}
+
+.buscar{
+    background-color: white;
+    border:1px solid blue;
     padding: 4px;
     border-radius: 8px;
     width: 300px;
@@ -82,8 +91,13 @@ pase por el*/
 }
 .buscar:focus-within{
     border: 1px solid blue;
+    justify-content:space-between ;
 }
+
 .buscar>input{
     outline: none;
     border: 0px;
+}
+.iconoBusqueda:hover{
+    color: brown;
 }
