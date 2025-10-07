@@ -101,3 +101,27 @@ pase por el*/
 .iconoBusqueda:hover{
     color: brown;
 }
+/*con esta clase agregandole el display flex ya las imagnes quedan una al lado de la otra
+*/
+.breadCardContainer{
+    display: flex;
+}
+/*aqui separo las imagenes con un margen de px para que no quede una junto a la otra
+*/
+.breadCard{
+    margin: 10px;
+    /*Para contener imagenes y que queden bien debo primero en la clase padre poner un display flex para que en la otra funcione
+*/
+}
+.contenedorImagen{
+    width: 350px;
+    height: 240px;
+    display: flex;
+}
+/*con el object fit cover ya la imagen esta en un mejor tamaño el width 100% es para que todas las imagenes de ahi para abajo
+sean del mismo tamaño osea no superen el tamaño de la foto padre
+*/
+.contenedorImagen>img{
+    object-fit: cover;
+    width: 80%;
+}
