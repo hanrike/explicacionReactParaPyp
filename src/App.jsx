@@ -3,6 +3,8 @@ import './styles/styles.css'
 import proyectoConcejo from './media/IMG_4683.JPG';
 import concejo from './media/IMG_4740.JPG';
 {/** dentro de function app meto el html de mi codigo html puro*/}
+{/** react se trabaja declarando funciones nombre de la funcion App(parametros) y llaves con el contenido de la funcion*/}
+{/** lo bueno de java es que puede retornar codigo html*/}
 function App() {
   return (
     <div className="App">
@@ -43,6 +45,47 @@ function App() {
       <h1>Proyectos ejecutados</h1>
         {/*con esta clase breadCa.. quiero que las fotos esten una al lado de la otra y no abajo*/}
       <ul className="breadCardContainer">
+        {/* con componentes lo unico que tengo que hacer es llamar a mi etiqueta personalizada, 
+        que es la funcion que hice  */}
+        {/* En proyectores pongo el componente nombreProyecto que puedo cambiar solo con la funcion Proyectores
+        y el objeto {props.cualquiercosa}  */}
+         <Proyectores nombreProyecto='Sala de Concejo' imagen={concejo}/>
+         <Proyectores nombreProyecto='Concejo Principal' imagen={proyectoConcejo}/>
+         <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
+         <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
+         <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
+      </ul>
+      </section>
+        <section></section>
+    </main>
+    <section></section>
+    <section></section>
+    <footer>          
+    </footer>
+    </div>
+  );
+}
+{/* con esta funcion hago etiquetas personalizadas en este caso esta en el footer la etiqueta; las funciones siempre
+    deben ir la primera con mayuscula para que el navegador las pueda leer esto es en react*/}
+    {/* Los props son los input de la funcion como se hacia en python los props sonn objetos*/}
+function Proyectores(props){
+    return(
+         //con componentes en react son pedazos de codigo que se pueden extraer de mi logica y se pueden reutilizar
+         //tanto como yo quiera
+        <li className="breadCard backgroundRojo">
+            <div className="contenedorImagen">
+                <img src= {props.imagen} alt="proyecto concejo"/>
+            </div>
+            <span className="breadTitle ">
+                {props.nombreProyecto}
+            </span>
+
+        </li>
+    );
+}
+
+function ProyectoresConcejo(){
+    return(
         <li className="breadCard">
              {/*cuando las fotos son muy grandes realizo un contenedorImagen con el fin de con css acomodarla de buena forma
              a la maquetacion html  */}
@@ -55,24 +98,8 @@ function App() {
                 proyecto concejo
             </span>
         </li>
-        <li className="breadCard">
-            <div className="contenedorImagen">
-                <img src= {concejo} alt="proyecto concejo"/>
-            </div>
-            <span className="breadTitle">
-                sala concejo
-            </span>
-
-        </li>
-      </ul>
-      </section>
-        <section></section>
-    </main>
-    <section></section>
-    <section></section>
-    <footer></footer>
-    </div>
-  );
+         
+    );
 }
 
 export default App;

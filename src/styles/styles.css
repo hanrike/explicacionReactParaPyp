@@ -146,3 +146,6 @@ sean del mismo tamaño osea no superen el tamaño de la foto padre, el border ra
     width: 80%;
     border-radius: 10px;
 }
+.backgroundRojo{
+   background-color: red;
+}
