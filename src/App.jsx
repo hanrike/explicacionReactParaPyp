@@ -1,7 +1,9 @@
-import pyp from './media/pyp.png';
+import pyp from 'media/pyp.png';
 import './styles/styles.css'
+import equiposSuzuki from './media/IMG_1661.JPG'
 import proyectoConcejo from './media/IMG_4683.JPG';
 import concejo from './media/IMG_4740.JPG';
+import Proyectores from './components/Proyectores';
 {/** dentro de function app meto el html de mi codigo html puro*/}
 {/** react se trabaja declarando funciones nombre de la funcion App(parametros) y llaves con el contenido de la funcion*/}
 {/** lo bueno de java es que puede retornar codigo html*/}
@@ -51,7 +53,7 @@ function App() {
         y el objeto {props.cualquiercosa}  */}
          <Proyectores nombreProyecto='Sala de Concejo' imagen={concejo}/>
          <Proyectores nombreProyecto='Concejo Principal' imagen={proyectoConcejo}/>
-         <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
+         <Proyectores nombreProyecto='Mantenimiento Suzuki' imagen={equiposSuzuki}/>
          <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
          <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
       </ul>
@@ -65,27 +67,7 @@ function App() {
     </div>
   );
 }
-{/* con esta funcion hago etiquetas personalizadas en este caso esta en el footer la etiqueta; las funciones siempre
-    deben ir la primera con mayuscula para que el navegador las pueda leer esto es en react*/}
-    {/* Los props son los input de la funcion como se hacia en python los props sonn objetos*/}
-    {/*En las funciones se pueden utilizar props pero tambien poner los nombres de la funcion como se haria 
-        en python de esta manera los nombre no son genericos y se puede leer el codigo mas facilmente  */}
-    {/*Podemos decir que function Proyectores es en realidad un componente  */}
-function Proyectores(nombreProyecto,imagen){
-    return(
-         //con componentes en react son pedazos de codigo que se pueden extraer de mi logica y se pueden reutilizar
-         //tanto como yo quiera
-        <li className="breadCard backgroundRojo">
-            <div className="contenedorImagen">
-                <img src= {imagen} alt="proyecto concejo"/>
-            </div>
-            <span className="breadTitle ">
-                {nombreProyecto}
-            </span>
 
-        </li>
-    );
-}
 
 function ProyectoresConcejo(){
     return(
