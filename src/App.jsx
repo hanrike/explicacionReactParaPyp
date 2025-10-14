@@ -1,9 +1,9 @@
 import pyp from 'media/pyp.png';
-import './styles/styles.css'
-import equiposSuzuki from './media/IMG_1661.JPG'
-import proyectoConcejo from './media/IMG_4683.JPG';
-import concejo from './media/IMG_4740.JPG';
-import Proyectores from './components/Proyectores';
+import 'styles/styles.css'
+import equiposSuzuki from 'media/IMG_1661.JPG'
+import proyectoConcejo from 'media/IMG_4683.JPG';
+import concejo from 'media/IMG_4740.JPG';
+import Proyectores from 'components/Proyectores';
 {/** dentro de function app meto el html de mi codigo html puro*/}
 {/** react se trabaja declarando funciones nombre de la funcion App(parametros) y llaves con el contenido de la funcion*/}
 {/** lo bueno de java es que puede retornar codigo html*/}
