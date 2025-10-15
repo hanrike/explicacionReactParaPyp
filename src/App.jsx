@@ -7,6 +7,7 @@ import Index from 'pages';
 function App() {
   return (
     <div className="App">
+      {/**aqui con este Index utilizo todas las funciones que traslada de la carpeta pages haciendo la importacion*/}
         <Index />
     </div>
   );

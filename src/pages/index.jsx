@@ -1,14 +1,15 @@
-{/*Suponiendo que necesite el card Proyectores  */}
-{/*lO MEJOR ES HACER UN CODIGO PARA QUITAR LOS PUNTOS DE LA IMPORTACION  */}
 import Proyectores from "components/Proyectores";
 import equiposSuzuki from 'media/IMG_1661.JPG'
 import proyectoConcejo from 'media/IMG_4683.JPG';
 import concejo from 'media/IMG_4740.JPG';
 import pyp from 'media/pyp.png';
+{/*Suponiendo que necesite el card Proyectores, hay que tener en cuenta que estos comentarios no deben ir al inicio  */}
+{/*lO MEJOR ES HACER UN CODIGO PARA QUITAR LOS PUNTOS DE LA IMPORTACION  */}
 function Index(){
     return(
+        //Para evitar errores cuando traslado el codigo del App.jsx al index lo meto dentro de un div hay otras maneras
         <div>
-                   <header>
+        <header>
          {/* creo la clase navbar para los estitlos ul y li que los contiene para que los objetos no se vean debajo 
          sino uno al lado del otro; las class que se llaman en html puro aqui se llaman className para no
          generar conflictos con clases en react que son orientadas a objetos  */}
