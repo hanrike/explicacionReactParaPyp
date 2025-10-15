@@ -6,3 +6,4 @@ function Suzuki() {
     </div>
   );
 }
+ export default Suzuki;

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 {/* ESTO ES UN COMPONENTE DENTRO DE LA CARPETA components*/}
 {/* con esta funcion hago etiquetas personalizadas en este caso esta en el footer la etiqueta; las funciones siempre
     deben ir la primera con mayuscula para que el navegador las pueda leer esto es en react*/}
@@ -10,13 +12,14 @@ function Proyectores({nombreProyecto,imagen}){
          //con componentes en react son pedazos de codigo que se pueden extraer de mi logica y se pueden reutilizar
          //tanto como yo quiera
         <li className="breadCard backgroundRojo">
+            <Link to={'/suzuki'}>
             <div className="contenedorImagen">
                 <img src= {imagen} alt="proyecto concejo"/>
             </div>
+             </Link>
             <span className="breadTitle ">
                 {nombreProyecto}
             </span>
-
         </li>
     );
 }
