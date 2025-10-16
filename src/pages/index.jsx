@@ -3,6 +3,7 @@ import equiposSuzuki from 'media/IMG_1661.JPG'
 import proyectoConcejo from 'media/IMG_4683.JPG';
 import concejo from 'media/IMG_4740.JPG';
 import Header from "components/Header";
+import Footer from "components/Footer";
 
 {/*Suponiendo que necesite el card Proyectores, hay que tener en cuenta que estos comentarios no deben ir al inicio  */}
 {/*lO MEJOR ES HACER UN CODIGO PARA QUITAR LOS PUNTOS DE LA IMPORTACION  */}
@@ -32,8 +33,7 @@ function Index(){
     </main>
     <section></section>
     <section></section>
-    <footer>          
-    </footer>
+    <Footer /> 
     </div>
     )
 }
