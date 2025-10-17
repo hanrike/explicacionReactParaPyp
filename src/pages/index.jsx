@@ -2,7 +2,7 @@ import Proyectores from "components/Proyectores";
 import equiposSuzuki from 'media/IMG_1661.JPG'
 import proyectoConcejo from 'media/IMG_4683.JPG';
 import concejo from 'media/IMG_4740.JPG';
-import Layout from "layouts/Layout";
+
 
 
 {/*Suponiendo que necesite el card Proyectores, hay que tener en cuenta que estos comentarios no deben ir al inicio  */}
@@ -13,7 +13,7 @@ import Layout from "layouts/Layout";
   y conservo en todas las paginas el mismo esquema  */}
 function Index(){
     return(
-      <Layout>
+      
         <section>
         <h1>Proyectos ejecutados</h1>
           {/*con esta clase breadCa.. quiero que las fotos esten una al lado de la otra y no abajo*/}
@@ -29,7 +29,7 @@ function Index(){
           <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
         </ul>
         </section>
-      </Layout>
+      
       
     )
 };
