@@ -4,6 +4,7 @@ import proyectoConcejo from 'media/IMG_4683.JPG';
 import concejo from 'media/IMG_4740.JPG';
 import Layout from "layouts/Layout";
 
+
 {/*Suponiendo que necesite el card Proyectores, hay que tener en cuenta que estos comentarios no deben ir al inicio  */}
 {/*lO MEJOR ES HACER UN CODIGO PARA QUITAR LOS PUNTOS DE LA IMPORTACION  */}
 {/*De esta manera en el Index ya no toca importar el header y el footer en todas las páginas solo 
@@ -28,8 +29,8 @@ function Index(){
           <Proyectores nombreProyecto='Mantenimineto Suzuki'/>
         </ul>
         </section>
-        <section></section>
       </Layout>
+      
     )
 };
 export default Index;
