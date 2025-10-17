@@ -5,9 +5,11 @@ import Footer from "components/Footer";
 //con mi aplicacion 
 function Suzuki() {
   return (
-    <div>
+    //creo la clase mainContainer donde acomodare el footer donde debe estar
+    //voy a crear la clase mainContainer para agregarle estilos al footer y poderlo ubicar abajo esto se hace en css
+    <div className='mainContainer'>
       <Header />
-      Esta es la pagina de informacion del proyecto Suzuki
+      <main>Esta es la pagina de informacion del proyecto Suzuki</main>
       <Footer />
     </div>
   );
